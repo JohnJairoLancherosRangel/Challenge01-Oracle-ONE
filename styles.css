@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+body{
+    /*background-color: black;*/
+    background-image: linear-gradient(135deg,#00B7D4,#505488,#2F3F80,#161569,#5A4894,#A950A1,#FF7CAE);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+}
+
+@keyframes fanimado{
+
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.contenedorTextArea{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.contenedorTextoDesencriptado{
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.seccionDerecha{
+    float: left;
+    text-align: center;
+    margin-right: 20PX;
+  
+}
+.seccionIzquierda{
+    float: right;
+    text-align: center;
+}
+
+.centrarBoton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+textarea{
+    background-color: yellow;
+    border: 3px solid;
+    border-color: white;
+    border-radius: 15px;
+    font-family: Teko;
+    font-size: 30px;
+    width: 500px;
+    height: 250px;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+textarea:hover{
+    background-color: beige;
+    border: 3px solid;
+    border-color: yellow;
+    border-radius: 15px;
+}
+
+.titulo{
+    background-color: black;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    font-family: Teko;
+    color: red;
+    -webkit-text-stroke: 1px yellow;
+    margin-top: 2%;
+    border: 2px solid;
+    border-color: white;
+    border-radius: 15px;
+}
+
+
+.boton{
+
+font-family: Teko;
+font-weight: 100;
+font-size: 22px;
+color: #fff;
+background: linear-gradient(90deg, #0066CC 0%, #c500cc 100%);
+padding: 10px 34px;
+border: solid #ccff00 7px;
+box-shadow: rgb(0, 0, 0) 7px 2px 4px 1px;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY(0);
+display: flex;
+flex-direction: row;
+align-items: center;
+cursor: pointer;
+text-transform: uppercase;
+margin: 10px 10px 10px 10px;
+}
+
+.boton:hover{
+
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background: linear-gradient(90deg, #0066CC 0%, #c500cc 100%);
+color: #ffffff;
+border: solid 7px #ffffff;
+}
+
+
+/* Estilos para resoluciones bajas */
+@media (max-width: 1000px) {
+    body {
+      font-size: 14px;
+      display: grid;
+      width: auto;
+    
+    }
+    
+    .contenedorTextArea{
+        display: inline-grid;
+        width: 90%;
+        height: 800px;
+        justify-content: center;
+        margin: 0 0 0 0;
+    }
+
+    .seccionDerecha{
+        text-align: center;
+        margin-right: 0%;
+        display: block;
+
+    }
+    .seccionIzquierda{
+        text-align: center;
+        display: block;
+    }
+
+    textarea{
+        background-color: azure;
+        border: 3px solid;
+        border-color: white;
+        border-radius: 15px;
+        font-family: Teko;
+        font-size: 30px;
+        width: 300px;
+        height: 250px;
+        margin: 0px 2% 0 2%;
+    }
+
+    .titulo{
+        background-color: black;
+        display: block;
+        text-align: center;
+        justify-content: center;
+        font-size: 40px;
+        font-family: Teko;
+        color: red;
+        -webkit-text-stroke: 1px yellow;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .contenedorTextoDesencriptado{
+        text-align: center;
+        justify-content: center;
+        display: grid;
+        width: 90%;
+        height: 330px;
+        margin: 0 0 30px 0;
+    }
+  }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Encriptador</title>
+</head>
+
+<script src="Encryptador.js"></script>
+
+<body>
+    
+    <p class="titulo">Encryptador de Texto</p>
+
+    <div class="contenedorTextArea">
+
+        <div class="seccionDerecha">
+
+            <p class="titulo">Ingrese El Texto a Encriptar</p>
+            <textarea rows="15" cols="80" name="mensajeIngreso" id="mensajeIngreso"></textarea>
+            <div class="centrarBoton">
+                <button class="boton" onclick="obtenerTextoIngreso()">Encriptar <img src="https://www.htmlcssbuttongenerator.com/iconExample-notification-filled.svg" style="width:26px; margin-left:9px; margin-right:3px; flex-direction: row;"></button>
+            </div>
+            
+        </div>
+        
+        <div class="seccionIzquierda">
+
+            <p class="titulo">Texto Encriptado</p>
+            <textarea rows="15" cols="80" name="mensajeEncriptado" id="mensajeEncriptado"></textarea>
+            <div class="centrarBoton" >
+                <button class="boton" onclick="obtenerTextoEncriptado()">Desencriptar <img src="https://www.htmlcssbuttongenerator.com/iconExample-notification-filled.svg" style="width:26px; margin-left:9px; margin-right:3px; flex-direction: row;"></button>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+    <div class="contenedorTextoDesencriptado">
+        <p class="titulo">Texto Desencriptado</p>
+        <textarea rows="8" cols="80" name="mensajeDesencriptado" id="mensajeDesencriptado"></textarea>
+    </div>
+
+</body>
+
+</html>
